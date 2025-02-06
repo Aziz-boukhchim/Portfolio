@@ -4,7 +4,7 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   padding: 50px 20px; /* Top/bottom padding, left-right is constrained by flex */
-  background: linear-gradient(to right, #3c1e70, #1f3b74); /* Darker purple gradient background */
+  background: linear-gradient(to right, #3c1e70, #1f3b74);/* Darker purple gradient background */
   color: white; /* Text color */
   height: 100vh; /* Full viewport height */
   text-align: center; /* Center text on larger screens */
@@ -55,7 +55,7 @@
 }
 
 .about-me h2 {
-  font-size: 3em; /* Larger heading size */
+  font-size: 2.5em; /* Larger heading size */
   margin-bottom: 20px;
 }
 
@@ -93,4 +93,8 @@
 
 .feel {
   text-align: center !important;
+}
+
+.orange {
+  color: #f39c12;
 }

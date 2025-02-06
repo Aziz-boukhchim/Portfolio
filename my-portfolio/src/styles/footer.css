@@ -45,6 +45,7 @@ footer p {
 
 .social-links a:hover {
   text-decoration: underline;
+  color: #f39c12;
 }
 
 footer .copyright {

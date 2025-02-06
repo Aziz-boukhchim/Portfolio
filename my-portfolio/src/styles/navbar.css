@@ -24,7 +24,7 @@ nav .logo {
 }
 
 nav .logo a {
-  color: white; /* Set the color of the AB logo to white */
+  color: #f39c12; /* Set the color of the AB logo to white */
   text-decoration: none; /* Remove the underline from the link */
 }
 
