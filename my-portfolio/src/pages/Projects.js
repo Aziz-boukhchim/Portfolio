@@ -6,7 +6,7 @@ function Projects() {
     <div className="projects-container">
           <br></br>  <br></br>  <br></br>  <br></br>
       <div>
-        <h1>My Recent Works</h1>
+        <h1>My Recent <span className='orange'>Works</span></h1>
         <p>Here are a few projects I've worked on recently</p>
       </div>
       <br></br>  <br></br>
