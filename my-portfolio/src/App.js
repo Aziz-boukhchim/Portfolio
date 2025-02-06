@@ -5,12 +5,15 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
 
   return (
    <div>
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
