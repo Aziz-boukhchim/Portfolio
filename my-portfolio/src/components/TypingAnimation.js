@@ -6,9 +6,9 @@ const TypingAnimation = () => {
         <TypeAnimation
 
         sequence={[
-            "Software Developer." , 2000, "" , 1000,
-            "Web developer." , 2000 , "" , 1000,
-            "Freelancer." , 2000, "" , 1000,
+            "Software Developer." , 3000, "" , 1000,
+            "Web developer." , 3000 , "" , 1000,
+            "Freelancer." , 3000, "" , 1000,
         ]}
         wrapper='h1'
         cursor={true}
