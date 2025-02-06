@@ -2,6 +2,7 @@ import React from 'react';
 import programmer from '../assets/programmer.webp';
 import '../styles/home.css';
 import { FaGithub , FaLinkedin } from "react-icons/fa";
+import TypingAnimation from '../components/TypingAnimation';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <div className="home-content">
         <h1>Hi There! 👋🏻</h1>
         <h1>I'M AZIZ BOUKHCHIM</h1>
-        <h1>Software Developer</h1>
+        <TypingAnimation></TypingAnimation>
       </div>
       <div className="home-image">
         <img src={programmer} alt="Description" />
