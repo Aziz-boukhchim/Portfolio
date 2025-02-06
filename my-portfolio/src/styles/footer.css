@@ -1,0 +1,53 @@
+footer {
+  background: linear-gradient(to right, #2c1f47, #1a2b45); /* Darker purple gradient background */
+  color: white;
+  padding: 3px 20px; /* Adding padding to give space around */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Aligns the items vertically */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* Center all the elements within the footer */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limiting the width so it doesn't stretch too much */
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  margin-right: 700px; /* Add a little space between left and right content */
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Add a little space between right and left content */
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  margin-left: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  text-align: center;
+  flex: 1; /* This makes the copyright text take up the remaining space */
+}

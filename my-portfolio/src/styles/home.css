@@ -1,0 +1,96 @@
+/* Main home section layout */
+.home {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 50px 20px; /* Top/bottom padding, left-right is constrained by flex */
+  background: linear-gradient(to right, #3c1e70, #1f3b74); /* Darker purple gradient background */
+  color: white; /* Text color */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text on larger screens */
+  margin-top: -90px;
+}
+
+/* Text content styling */
+.home-content {
+  max-width: 600px; /* Limit width of text content */
+  margin-right: 200px; /* Reduced space between text and image */
+  text-align: left; /* Align text to the left */
+}
+
+.home h1 {
+  font-size: 2.5em; /* Match font size with About Me section */
+  font-weight: bold; /* Make text bolder */
+  margin-bottom: 15px; /* Spacing between headings */
+}
+
+/* Styling for image */
+.home-image img {
+  width: 350px; /* Control image size */
+  height: auto;
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+  .home-content {
+    margin-right: 0;
+  }
+  .home-image {
+    margin-top: 20px;
+  }
+}
+
+/* About Me Section */
+.about-me {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #3c1e70, #1f3b74); /* Darker purple gradient background */
+  color: white; /* Text color */
+}
+
+.about-me h2 {
+  font-size: 3em; /* Larger heading size */
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1.4em; /* Increased font size */
+  color: #ddd; /* Lighter color for readability */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  line-height: 1.8; /* Increased line height for better readability */
+  max-width: 800px; /* Limit width of the paragraph */
+  margin-left: auto; /* Center-align the text */
+  margin-right: auto; /* Center-align the text */
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Social Links Styling */
+.social-links {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center;
+  gap: 20px; /* Space between the icons */
+  margin-top: 20px;
+}
+
+/* Change icon color */
+.social-links a {
+  color: #fff; /* White color for icons */
+  font-size: 2rem; /* Increase icon size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+  color: #00aced; /* Change color to LinkedIn blue or similar */
+}
+
+.feel {
+  text-align: center !important;
+}

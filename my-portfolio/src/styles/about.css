@@ -1,0 +1,137 @@
+/* Global styling for text */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3c1e70, #1f3b74); /* Darker purple gradient background */
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Clean modern font */
+}
+
+/* About Section Styling */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Headings and Text Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Strong header font */
+}
+
+.projects-h2 {
+    font-size: 1.3rem;
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* About text */
+.about-text {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.about-text p {
+    font-weight: 300; /* Lighter weight for body text */
+}
+
+/* Adjust image size */
+.about-image img {
+    max-width: 400px; /* Set to a reasonable size */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Light shadow */
+}
+
+/* Cards for skills and tools */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c1e70;
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    height: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ensure hover effect works */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect for the cards */
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Slightly smaller on mobile */
+    }
+
+    .projects-h2 {
+        font-size: 1.1rem; /* Slightly smaller text for readability */
+    }
+
+    /* Ensure the image size is still appropriate on smaller screens */
+    .about-image img {
+        max-width: 250px;
+    }
+}
