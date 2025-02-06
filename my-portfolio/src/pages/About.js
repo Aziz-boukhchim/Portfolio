@@ -13,9 +13,9 @@ function About() {
             <br></br><br></br><br></br><br></br><br></br>
             <div className="about-content">
                 <div className="about-text">
-                    <h1>Know Who I'M</h1>
+                    <h1>Know Who <span className='orange'>I'M</span></h1>
                     <p className="projects-h2">
-                        Hi Everyone, I'm Aziz Boukhchim, a passionate software developer with a strong interest in 
+                        Hi Everyone, I'm <span className='orange'>Aziz Boukhchim</span>, a passionate software developer with a strong interest in 
                         building modern web technologies and products. <br />
                         I enjoy solving problems and creating efficient, user-friendly applications. <br />
                         I'm always eager to learn new technologies and explore innovative solutions. 
@@ -27,7 +27,7 @@ function About() {
             </div>
             <br></br> <br></br> <br></br> <br></br> <br></br>
            
-            <h1>Professional Skillset</h1>
+            <h1>Professional <span className='orange'>Skillset</span></h1>
 
             <div className="card-container">
                 <div className="card">
@@ -80,7 +80,7 @@ function About() {
                 </div>
             </div>
 
-            <h1>Tools I Use</h1>
+            <h1><span className='orange'>Tools</span> I Use</h1>
             <div className="card-container">
                 <div className="card">
                     <VscVscode title="VSCode" size="2rem" />
@@ -103,6 +103,7 @@ function About() {
                     <p>Docker</p>
                 </div>
             </div>
+            <br></br><br></br>
         </div>
     );
 }
