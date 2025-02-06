@@ -13,6 +13,7 @@ const TypingAnimation = () => {
         wrapper='h1'
         cursor={true}
         repeat={Infinity}
+        style={{color : '#f39c12'}}
         ></TypeAnimation>
     );
 
