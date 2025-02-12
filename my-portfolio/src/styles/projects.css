@@ -36,10 +36,13 @@
   background-color: #3c1e70;
   padding: 20px;
   width: 250px;
-  height: 300px;
+  min-height: 350px; /* Ensure the card can expand with content */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Distribute space evenly */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   position: relative;
 }
@@ -63,6 +66,7 @@
 }
 
 .project-link {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;

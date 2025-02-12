@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as pdfjsLib from "pdfjs-dist/build/pdf"; // Correct import
 import "pdfjs-dist/build/pdf.worker"; // Worker import
 import "../styles/resume.css";
-import resume from '../assets/general_resume.pdf';
+import resume from '../assets/ResumeEng.pdf';
 
 function Resume() {
     const canvasRef = useRef(null);

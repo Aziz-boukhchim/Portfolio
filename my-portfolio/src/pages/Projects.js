@@ -1,5 +1,8 @@
 import React from "react";
 import "../styles/projects.css";
+import contact from '../assets/small.png'
+import { FaGithub } from "react-icons/fa";
+import blog from '../assets/blog.jpg'
 
 function Projects() {
   return (
@@ -14,52 +17,30 @@ function Projects() {
       <div className="projects-grid">
         {/* Card 1 */}
         <div className="project-card">
-          <img alt="project_related"></img>
-          <h4>Project 1</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project1" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
+          <img src={contact} alt="project_related"></img>
+          <h4>Manager Contact</h4>
+          <p>A simple contact management web app built with Django and Bootstrap. Allows users to add, update, and delete contacts efficiently</p>
+          <a href="https://github.com/Aziz-boukhchim/contact-manager" className="project-link" target="_blank" rel="noreferrer">View on GitHub <FaGithub size={20}></FaGithub></a>
         </div>
 
         {/* Card 2 */}
         <div className="project-card">
-        <img alt="project_related"></img>
-          <h4>Project 2</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project2" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
+        <img src={blog} alt="project_related"></img>
+          <h4>Blog Platform</h4>
+          <p>A full-stack blogging app built with React and Node.js. Users can create, edit, and delete blog posts with a responsive UI.</p>
+          <a href="https://github.com/Aziz-boukhchim/fullstack" className="project-link" target="_blank" rel="noreferrer">View on GitHub <FaGithub size={20}></FaGithub></a>
         </div>
 
         {/* Card 3 */}
         <div className="project-card">
-        <img alt="project_related"></img>
-          <h4>Project 3</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project3" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
+        <img alt="Pending"></img>
+          <h4>⚙️Upcoming Project⚙️</h4>
+          <p>Currently developing a new project! Stay tuned for updates.</p>
+          <a href="https://github.com/Aziz-boukhchim" className="project-link" target="_blank" rel="noreferrer">Coming Soon <FaGithub size={20}></FaGithub></a>
         </div>
-
-        <div className="project-card">
-        <img alt="project_related"></img>
-          <h4>Project 4</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project1" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-        
-        <div className="project-card">
-        <img alt="project_related"></img>
-          <h4>Project 5</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project1" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-
-        <div className="project-card">
-        <img alt="project_related"></img>
-          <h4>Project 6</h4>
-          <p>Short description of the project...</p>
-          <a href="https://github.com/yourusername/project1" className="project-link" target="_blank" rel="noreferrer">View on GitHub</a>
-        </div>
-        {/* Repeat for other projects */}
         
       </div>
-      <br></br>  <br></br>  <br></br>
+      <br></br>  <br></br>  <br></br><br></br>  <br></br>  <br></br><br></br>  <br></br>  <br></br>
     </div>
   );
 }
