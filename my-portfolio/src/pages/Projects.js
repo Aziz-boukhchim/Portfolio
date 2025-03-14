@@ -3,6 +3,7 @@ import "../styles/projects.css";
 import contact from '../assets/small.png'
 import { FaGithub } from "react-icons/fa";
 import blog from '../assets/blog.jpg'
+import tounsi from '../assets/Tounsi-Learn.jpg';
 
 function Projects() {
   return (
@@ -33,10 +34,10 @@ function Projects() {
 
         {/* Card 3 */}
         <div className="project-card">
-        <img alt="Pending"></img>
-          <h4>⚙️Upcoming Project⚙️</h4>
-          <p>Currently developing a new project! Stay tuned for updates.</p>
-          <a href="https://github.com/Aziz-boukhchim" className="project-link" target="_blank" rel="noreferrer">Coming Soon <FaGithub size={20}></FaGithub></a>
+        <img src={tounsi} alt="Tounsi Learn"></img>
+          <h4>Tounsi-Learn</h4>
+          <p>A platform for students to upload, search, and download university study materials, ensuring easy access to educational resources.</p>
+          <a href="https://github.com/Aziz-boukhchim/TounsiLearn" className="project-link" target="_blank" rel="noreferrer">View on GitHub <FaGithub size={20}></FaGithub></a>
         </div>
         
       </div>

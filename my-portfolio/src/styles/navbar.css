@@ -64,17 +64,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  nav .nav-container {
-    flex-direction: column; /* Stack logo and navbar items vertically on smaller screens */
-    text-align: center;
+  nav {
+    padding: 5px 10px;
+  }
+
+  nav .logo {
+    margin-right: 0; /* Remove large margin */
+    font-size: 1.2em; /* Reduce size */
   }
 
   nav ul {
-    flex-direction: column; /* Stack the links vertically */
-    align-items: center; /* Center the links */
-  }
-
-  nav ul li {
-    margin: 10px 0;
+    gap: 20px; /* Reduce space */
   }
 }
