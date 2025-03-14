@@ -1,34 +1,31 @@
 footer {
   background: linear-gradient(to right, #2c1f47, #1a2b45); /* Darker purple gradient background */
   color: white;
-  padding: 3px 20px; /* Adding padding to give space around */
+  padding: 20px; /* Increase padding for better spacing */
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Aligns the items vertically */
+  flex-direction: column; /* Stack content vertically on small screens */
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-content {
   display: flex;
-  justify-content: center; /* Center all the elements within the footer */
+  flex-direction: row; /* Keep content in a row on desktop */
+  justify-content: space-between; /* Space out left and right content */
   align-items: center;
   width: 100%;
   max-width: 1200px; /* Limiting the width so it doesn't stretch too much */
 }
 
-.left-content {
-  display: flex;
-  align-items: center;
-  margin-right: 700px; /* Add a little space between left and right content */
-}
-
+.left-content,
 .right-content {
   display: flex;
   align-items: center;
-  margin-left: 20px; /* Add a little space between right and left content */
 }
 
 footer p {
   margin: 0;
+  font-size: 14px; /* Make font smaller for better readability */
 }
 
 /* Social links */
@@ -48,7 +45,28 @@ footer p {
   color: #f39c12;
 }
 
+/* Copyright style */
 footer .copyright {
   text-align: center;
-  flex: 1; /* This makes the copyright text take up the remaining space */
+  margin-top: 10px; /* Add spacing for better separation */
+  font-size: 12px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center; /* Center all elements */
+  }
+
+  .left-content, .right-content {
+    margin: 10px 0; /* Add some space between left and right content on mobile */
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .social-links {
+    margin-left: 0; /* Align social links properly */
+    margin-top: 10px; /* Add space between social links and other content */
+  }
 }

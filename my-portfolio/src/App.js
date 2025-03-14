@@ -6,6 +6,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import './App.css';
 
 
 function App() {

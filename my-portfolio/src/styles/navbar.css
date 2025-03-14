@@ -7,24 +7,30 @@ nav {
   left: 0; /* Ensure it stays on the left */
   width: 100%; /* Ensure it spans the full width */
   z-index: 1000; /* Ensure it stays above other elements */
+  box-sizing: border-box; /* Prevent width overflow */
+  display: flex;
+  justify-content: space-between; /* Space out the logo and links */
+  align-items: center; /* Vertically center content */
 }
 
+/* Navbar container */
 .nav-container {
-  display: flex;
-  justify-content: center; /* Center all items */
-  align-items: center; /* Vertically center content */
   width: 100%;
+  max-width: 1200px; /* Limit the container width */
+  margin: 0 auto; /* Center it horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo styles */
 nav .logo {
   font-size: 1.5em;
   font-weight: bold;
-  margin-right: 600px; /* Increase the space between the logo and the links */
 }
 
 nav .logo a {
-  color: #f39c12; /* Set the color of the AB logo to white */
+  color: #f39c12; /* Set the color of the AB logo */
   text-decoration: none; /* Remove the underline from the link */
 }
 
@@ -34,12 +40,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center the links horizontally */
-  gap: 40px; /* Space between the links */
-}
-
-nav ul li {
-  margin: 0;
+  gap: 40px;
 }
 
 nav ul li a {
@@ -53,27 +54,64 @@ nav ul li a:hover {
   color: #f39c12; /* Hover color */
 }
 
-/* Icon and text styling */
-nav ul li a svg {
-  margin-right: 8px; /* Space between the icon and the text */
+/* Mobile hamburger menu */
+.menu-icon {
+  display: none; /* Hide the hamburger icon by default */
+  cursor: pointer;
 }
 
-/* Adjust the content below the navbar */
-body {
-  margin-top: 80px; /* Add margin to the top of the body to prevent content from being hidden under the navbar */
-}
-
+/* For mobile screen sizes */
 @media (max-width: 768px) {
   nav {
     padding: 5px 10px;
   }
 
-  nav .logo {
-    margin-right: 0; /* Remove large margin */
-    font-size: 1.2em; /* Reduce size */
+  /* Navbar container for mobile */
+  .nav-container {
+    justify-content: space-between; /* Space the logo and hamburger menu apart */
   }
 
+  /* Logo for mobile */
+  nav .logo {
+    font-size: 1.2em; /* Reduce font size */
+  }
+
+  /* Hide navbar links on mobile */
   nav ul {
-    gap: 20px; /* Reduce space */
+    display: none;
+    flex-direction: column; /* Stack the links vertically */
+    width: 100%; /* Ensure the menu stretches to full width */
+    position: absolute; /* Position the menu below the navbar */
+    top: 60px; /* Place the menu just below the navbar */
+    left: 0;
+    background-color: #3c1e70; /* Match the navbar color */
+    z-index: 999; /* Ensure it's on top */
+    padding: 10px 0;
+  }
+
+  /* Show links when the menu is open */
+  nav ul.active {
+    display: flex;
+  }
+
+  /* Mobile menu links styling */
+  nav ul li {
+    width: 100%;
+    text-align: center; /* Center the links */
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 20px; /* Increase font size on mobile */
+  }
+
+  /* Show hamburger menu icon on mobile */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Ensure content below navbar is not hidden */
+  body {
+    margin-top: 120px; /* Increase the space for mobile view to avoid overlap */
   }
 }
