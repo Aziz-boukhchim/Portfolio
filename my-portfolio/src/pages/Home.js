@@ -43,7 +43,7 @@ function Home() {
             <a href="https://github.com/aziz-boukhchim" target="_blank" rel="noopener noreferrer">
               <FaGithub size={48} />
             </a>
-            <a href="https://www.linkedin.com/in/aziz-boukhchim" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/aziz-boukhchim-662722288/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={48} />
             </a>
           </div>
