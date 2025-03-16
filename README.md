@@ -28,4 +28,4 @@ I believe in the power of technology to solve real-world problems and am constan
 ## 💬 Contact
 Feel free to reach out for collaborations, job opportunities, or just to connect:
 - **Email**: aziz.boukhchim@example.com (replace with your actual email)
-- **LinkedIn**: [Aziz Boukhchim LinkedIn](https://www.linkedin.com/in/aziz-boukhchim)
+- **LinkedIn**: [Aziz Boukhchim LinkedIn](https://www.linkedin.com/in/aziz-boukhchim-662722288/)
